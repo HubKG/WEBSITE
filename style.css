@@ -1,0 +1,25 @@
+body {
+    /*background-image: url(akatsuki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-color:lightblue;
+    /*background: linear-gradient(#00ccff, #b3f0ff);*/
+    text-align: center;
+}
+
+h1 {
+    /*text-align: center;*/
+    text-shadow: 2px 2px 5px white;
+}
+
+img {
+    margin: 40px;
+}
+
+.borderImg {
+    /*border: 2px solid red;*/
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+
+}
