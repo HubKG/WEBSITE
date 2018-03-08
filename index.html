@@ -4,14 +4,31 @@
         <title> Kit's WEBPAGE </title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <nav>
-            <ul class="topnav">
-                <li><a href="#home">Home</a></li>
+            <ul class="topnav" id="dropDownClick">
+                <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
             </ul>
         </nav>
+
+        
+        <script>
+            function dropdownMenu() {
+                var kitFirst = document.getElementById("dropDownClick");
+                if (kitFirst.className === "topnav") {
+                    kitFirst.className += " responsive";
+                    /*change topnav to topnav.responsive*/
+                } else {
+                    kitFirst.className = "topnav";
+                }
+            }
+        </script>
+
+
         <h1>My first webpage!</h1>
         <p> This is work-in-progress. For now I'm just playing around</p>
         <ul>
