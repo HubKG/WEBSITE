@@ -8,9 +8,30 @@ body {
     /*background-image: url(akatsuki.jpg);
     background-repeat: no-repeat;
     background-size: cover;*/
-    background-color:lightblue;
+    background: linear-gradient(#076DFF, #65a5ff);
+    /*background-color:lightblue;*/
     /*background: linear-gradient(#00ccff, #b3f0ff);*/
     text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
 }
 
 h1 {
@@ -92,7 +113,6 @@ ul.topnav li.dropdownIcon {
     display: none;
 }*/
 
-/*######## Mobile #########*/
 
 @media screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
