@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+    <p>M311 Office Humor</p>
+
+    <button onclick="myFunction()"><b>Click this button</b></button>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    
+    <script>
+        function myFunction() {
+            var newFirstName, newLastNameOne, newLastNameTwo;
+        
+            var newFirstNameA = ["Curvy","Fluffy","Buttercup","Bigfoot","Boozy","Sleepy","Fluffy","Mighty","Leggy","Hothead","Curvy","Boobie","Slippery","Boozy","Bouncing","Twerky","Hothead","Loopy","Twerky","Bouncing","Tweety","Cheeky","Bigfoot","Chilly","Nervous","Airhead"]
+            var newLastNameOneA = ["Thunder","Noodle","Giggle","Apple","Thunder","Sugar","Bubble","Waffle","Gorilla","Giant","Giant","Bubble","Banana","Thunder","Vodka","Super","Super","Sugar","Pizza","Super","Chicken","Pickle","Tequila","Giant","Bubble","Twinkle"]
+            var newLastNameTwoA = ["brains","mouth","nose","face","tush","breath","brains","boobs","lips","thighs","feet","nose","breath","knees","hiney","head","toes","buns","cheeks","bottom","hips","brains","booty","cheeks","stomach","ears"]
+    
+            var firstName = prompt("Please enter your first name"), lastName = prompt("Please enter your last name");
+
+            if (firstName === "" || lastName === "") { 
+                document.getElementById("demo").innerHTML = "You don't know your name? "   
+            } else {
+                document.getElementById("demo").innerHTML = "Hello " + firstName + " " + lastName + ". ";
+            } 
+
+            switch (firstName.charAt(2)) {
+                case "a": newFirstName = newFirstNameA[0]; break;
+                case "b": newFirstName = newFirstNameA[1]; break;
+                case "c": newFirstName = newFirstNameA[2]; break;
+                case "d": newFirstName = newFirstNameA[3]; break;
+                case "e": newFirstName = newFirstNameA[4]; break;
+                case "f": newFirstName = newFirstNameA[5]; break;
+                case "g": newFirstName = newFirstNameA[6]; break;
+                case "h": newFirstName = newFirstNameA[7]; break;
+                case "i": newFirstName = newFirstNameA[8]; break;
+                case "j": newFirstName = newFirstNameA[9]; break;
+                case "k": newFirstName = newFirstNameA[10]; break;
+                case "l": newFirstName = newFirstNameA[11]; break;
+                case "m": newFirstName = newFirstNameA[12]; break;
+                case "n": newFirstName = newFirstNameA[13]; break;
+                case "o": newFirstName = newFirstNameA[14]; break;
+                case "p": newFirstName = newFirstNameA[15]; break;
+                case "q": newFirstName = newFirstNameA[16]; break;
+                case "r": newFirstName = newFirstNameA[17]; break;
+                case "s": newFirstName = newFirstNameA[18]; break;
+                case "t": newFirstName = newFirstNameA[19]; break;
+                case "u": newFirstName = newFirstNameA[20]; break;
+                case "v": newFirstName = newFirstNameA[21]; break;
+                case "w": newFirstName = newFirstNameA[22]; break;
+                case "x": newFirstName = newFirstNameA[23]; break;
+                case "y": newFirstName = newFirstNameA[24]; break;
+                case "z": newFirstName = newFirstNameA[25]; break;
+                default: newFirstName = "Ginormous";
+            }
+            switch (lastName.charAt(0)) {
+                case "A": case "a": newLastNameOne = newLastNameOneA[0]; break;
+                case "B": case "b": newLastNameOne = newLastNameOneA[1]; break;
+                case "C": case "c": newLastNameOne = newLastNameOneA[2]; break;
+                case "D": case "d": newLastNameOne = newLastNameOneA[3]; break;
+                case "E": case "e": newLastNameOne = newLastNameOneA[4]; break;
+                case "F": case "f": newLastNameOne = newLastNameOneA[5]; break;
+                case "G": case "g": newLastNameOne = newLastNameOneA[6]; break;
+                case "H": case "h": newLastNameOne = newLastNameOneA[7]; break;
+                case "I": case "i": newLastNameOne = newLastNameOneA[8]; break;
+                case "J": case "j": newLastNameOne = newLastNameOneA[9]; break;
+                case "K": case "k": newLastNameOne = newLastNameOneA[10]; break;
+                case "L": case "l": newLastNameOne = newLastNameOneA[11]; break;
+                case "M": case "m": newLastNameOne = newLastNameOneA[12]; break;
+                case "N": case "n": newLastNameOne = newLastNameOneA[13]; break;
+                case "O": case "o": newLastNameOne = newLastNameOneA[14]; break;
+                case "P": case "p": newLastNameOne = newLastNameOneA[15]; break;
+                case "Q": case "q": newLastNameOne = newLastNameOneA[16]; break;
+                case "R": case "r": newLastNameOne = newLastNameOneA[17]; break;
+                case "S": case "s": newLastNameOne = newLastNameOneA[18]; break;
+                case "T": case "t": newLastNameOne = newLastNameOneA[19]; break;
+                case "U": case "u": newLastNameOne = newLastNameOneA[20]; break;
+                case "V": case "v": newLastNameOne = newLastNameOneA[21]; break;
+                case "W": case "w": newLastNameOne = newLastNameOneA[22]; break;
+                case "X": case "x": newLastNameOne = newLastNameOneA[23]; break;
+                case "Y": case "y": newLastNameOne = newLastNameOneA[24]; break;
+                case "Z": case "z": newLastNameOne = newLastNameOneA[25]; break;
+                default: newLastNameOne = "Nose";
+            }
+            switch (lastName.charAt(2)) {
+                case "a": newLastNameTwo = newLastNameTwoA[0]; break;
+                case "b": newLastNameTwo = newLastNameTwoA[1]; break;
+                case "c": newLastNameTwo = newLastNameTwoA[2]; break;
+                case "d": newLastNameTwo = newLastNameTwoA[3]; break;
+                case "e": newLastNameTwo = newLastNameTwoA[4]; break;
+                case "f": newLastNameTwo = newLastNameTwoA[5]; break;
+                case "g": newLastNameTwo = newLastNameTwoA[6]; break;
+                case "h": newLastNameTwo = newLastNameTwoA[7]; break;
+                case "i": newLastNameTwo = newLastNameTwoA[8]; break;
+                case "j": newLastNameTwo = newLastNameTwoA[9]; break;
+                case "k": newLastNameTwo = newLastNameTwoA[10]; break;
+                case "l": newLastNameTwo = newLastNameTwoA[11]; break;
+                case "m": newLastNameTwo = newLastNameTwoA[12]; break;
+                case "n": newLastNameTwo = newLastNameTwoA[13]; break;
+                case "o": newLastNameTwo = newLastNameTwoA[14]; break;
+                case "p": newLastNameTwo = newLastNameTwoA[15]; break;
+                case "q": newLastNameTwo = newLastNameTwoA[16]; break;
+                case "r": newLastNameTwo = newLastNameTwoA[17]; break;
+                case "s": newLastNameTwo = newLastNameTwoA[18]; break;
+                case "t": newLastNameTwo = newLastNameTwoA[19]; break;
+                case "u": newLastNameTwo = newLastNameTwoA[20]; break;
+                case "v": newLastNameTwo = newLastNameTwoA[21]; break;
+                case "w": newLastNameTwo = newLastNameTwoA[22]; break;
+                case "x": newLastNameTwo = newLastNameTwoA[23]; break;
+                case "y": newLastNameTwo = newLastNameTwoA[24]; break;
+                case "z": newLastNameTwo = newLastNameTwoA[25]; break;
+                default: newLastNameTwo = "Mountain";
+            }
+            document.getElementById("demo2").innerHTML = ("Your M311 name is " + newFirstName + " " + newLastNameOne + newLastNameTwo + "!");
+        }
+    </script>
+</body>
+</html>
